@@ -1,4 +1,4 @@
-.footer{ background-color: antiquewhite;}
+.footer {background-color: #232678;}
 .h1, h2 {font-family: 'Arial Narrow Bold', sans-serif;}
 .hero {
     background:  url(https://www.ereplacementparts.com/blog/wp-content/uploads/2017/04/sessionable-beer-header-1024x340.png) no-repeat;
@@ -17,7 +17,5 @@
 
 .testimonios {background-color:pink; padding-bottom: 4rem !important;}
 .testimonio {text-align: center; padding: 50px 20px}
-
-
 
 .nosotros {background: #efefef;}
