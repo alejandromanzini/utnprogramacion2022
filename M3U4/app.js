@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var session = requiere('express-session')
+var session = require('express-session')
 
 
 
@@ -51,7 +51,7 @@ app.get('/', function (req, res) {
   });
 
 });
-app.post('ingresar', function(req,res){
+app.post('/ingresar', function(req,res){
   if (req.body.nombre) {
     req.session.nombre = req.body.nombre
   }
