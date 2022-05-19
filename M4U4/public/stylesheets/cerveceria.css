@@ -1,0 +1,21 @@
+footer {background-color: pink; color: whitesmoke; margin-top:20px;}
+.h1, h2 {font-family: 'Arial Narrow Bold', sans-serif;}
+.hero {
+    background:  url(https://www.ereplacementparts.com/blog/wp-content/uploads/2017/04/sessionable-beer-header-1024x340.png) no-repeat;
+    background-size: cover;
+    height: 50vh;
+    min-height: 600px;
+    color: white;
+}
+
+.lista-novedades {margin: 0; padding: 0; list-style: none;}
+.lista-novedades li {margin: 4px 0;}
+.lista-novedades li a {background-color: #fff; font-family: 'Gill Sans', sans-serif; text-decoration: none; font-size: 1.2rem; color:#a0a0a0; transition: all .2s ease-in-out; display: block}
+.lista-novedades li a:hover {color:#212529; background-color: #dadada;}
+.lista-novedades li a img {width: 120px; height: 50px; filter: grayscale(); transition: all .2s ease-in-out; margin-right: 1rem; opacity:0,7;}
+.lista-novedades li a:hover img {filter: none; margin-right: 1.4rem; opacity: 1;}
+
+.testimonios {background-color:pink; padding-bottom: 4rem !important;}
+.testimonio {text-align: center; padding: 50px 20px}
+
+.nosotros {background: #efefef;}
