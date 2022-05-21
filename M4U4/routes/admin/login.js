@@ -21,18 +21,18 @@ router.post ('/', async (req, res, next)=>{
 
         console.log (req.body);
         
-        var data = await usuariosModel.getUserAndPassword(usuario, password);
+        var data = await 
+        usuariosModel.getUserAndPassword(usuario, password);
 
-        if (data !=undefined) {
-
+        if (data != undefined) {
             req.session.id_usuario = data.id;
             req.session.nombre = data.usuario;
-            res.redirect('admin/novedades');
+            res.redirect('/admin/novedades');
         } else {
             res.render ('admin/login', {
                 layout: 'admin/layout',
                 error: true
-            })
+            });
         }
     }
  catch (error){console.log(error);
