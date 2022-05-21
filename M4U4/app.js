@@ -12,7 +12,7 @@ var pool = require('./models/bd'); //bd.js
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-var loginRouter = require ('./routes/admin/login/');
+var loginRouter = require ('./routes/admin/login');
 var adminRouter = require ('./routes/admin/novedades');
 const res = require('express/lib/response');
 var app = express();
