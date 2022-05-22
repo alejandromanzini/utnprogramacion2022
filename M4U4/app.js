@@ -54,21 +54,20 @@ secured = async (req, res, next) => {
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
-app.use ('admin/novedades', secured, adminRouter);
-//select
-pool.query('select * from empleados').then(function (resultados){
-  console.log(resultados)
-});//
-//insert
-var obj = {
-  nombre: 'Carlos',
-  apellido: 'Lopez',
-  trabajo: docente, 
-  edad: 38,
-  salario: 25000,
-  mail: 'carloslopez@gmail.com',
-}
-
+app.use ('/admin/novedades', secured, adminRouter);
+// //select
+// pool.query('select * from empleados').then(function (resultados){
+//   console.log(resultados)
+// });//
+// //insert
+// var obj = {
+//   nombre: 'Carlos',
+//   apellido: 'Lopez',
+//   trabajo: docente, 
+//   edad: 38,
+//   salario: 25000,
+//   mail: 'carloslopez@gmail.com',
+// }
 
 
 
