@@ -32,9 +32,11 @@
                         <tr>
                             <th scope="row">{{id}}</th>
                             <td>{{titulo}}</td>
+                            <td class="text-right">
                             <a href="" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i></a>
-                            <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-secondary"><i class="fas fa-trash"></i></a>
-                        </td>
+                            <a href="/admin/novedades/eliminar/ {{id}} " class="btn btn-secondary">
+                            <i class="fas fa-trash"></i></a>
+                            </td>
                         {{/each}}
                         </tr>
                     </tbody>
