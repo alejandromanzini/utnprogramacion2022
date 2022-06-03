@@ -1,45 +1,46 @@
-<div class="container" style "margin-top:120px;">
-    <div class ="row">
+<div class="container" style "margin-top:150px;">
+    <div class="row">
         <div class="col">
             <p class="text-right">
-                <span>Hola {{usuario}}</span>
-                <a href="/admin/login/logout"class="btn btn-danger">Cerrar sesión <i class="fas fa-sign-out-alt"></i>
-                </a>
+                <span>Hola {{usuario}}!!<span>
+                        <a href="/admin/login/logout" class="btn btn-danger">Cerrar sesión <i
+                                class="fas fa-sign-out-alt"></i> </a>
             </p>
         </div>
     </div>
 </div>
-    <div class="row">
-        <div class="col-7" style="margin-top:-9px;">
-            <h2>Listado de novedades</h2>
-        </div>
-        <div class="col-5 text-right">
-            <a href="" class="btn btn-sucess"> <i class="fas fa-plus"></i> Nuevo</a>
-        </div>
+<div class="row">
+    <div class="col-7" style="margin-top:-9px;">
+        <h2>Listado de novedades</h2>
+    </div>
+    <div class="col-5 text-right">
+        <a href="/admin/novedades/agregar" class="btn btn-sucess"> <i class="fas fa-plus"></i>Nuevo</a>
+    </div>
 
-        <div class="row">
-            <div class="col">
-                <table class="table">
-                    <thead>
-                        <tr class="table-dark">
-                            <th scope="col">#</th>
-                            <th scope="col">Titulo</th>
-                            <th scope="col" class= "text-right">Acciones</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {{#each novedades}}
-                        <tr>
-                            <th scope="row">{{id}}</th>
-                            <td>{{titulo}}</td>
-                            <td class="text-right">
-                            <a href="" class="btn btn-secondary"><i class="fas fa-pencil-alt"></i></a>
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead>
+                    <tr class="table-dark">
+                        <th scope="col">#</th>
+                        <th scope="col">Titulo</th>
+                        <th scope="col" class="text-right">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each novedades}}
+                    <tr>
+                        <th scope="row">{{id}}</th>
+                        <td>{{titulo}}</td>
+                        <td class="text-right">
+                            <a href="/admin/novedades/modificar/ {{id}}" class="btn btn-secondary"> <i
+                                    class="fas fa-pencil-alt"></i> </a>
                             <a href="/admin/novedades/eliminar/ {{id}} " class="btn btn-secondary">
-                            <i class="fas fa-trash"></i></a>
-                            </td>
-                        {{/each}}
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                                <i class="fas fa-trash"></i></a>
+                            {{/each}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+    </div>
