@@ -7,7 +7,7 @@ async function getNovedades() {
 }
 
 async function deleteNovedadesById(id) {
-    var query = "delete * from novedades where id =?";
+    var query = "delete from novedades where id =?";
     var rows = await pool.query(query, [id]);
     return rows;
 }
@@ -25,7 +25,7 @@ async function insertNovedad(obj) {
 }
 
 async function getNovedadById(id) {
-        var query = "select *from novedades where id=? ";
+        var query = "select * from novedades where id=? ";
         var rows = await pool.query(query,[id]);
         return rows [0];
     } 
